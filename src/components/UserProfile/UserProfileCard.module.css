@@ -1,0 +1,86 @@
+.profileContainer {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profileItem {
+  margin: 10px 0;
+}
+
+.profileLabel {
+  font-weight: bold;
+}
+
+.profileValue {
+  margin-left: 5px;
+}
+
+.editButton, .logoutButton, .toggleButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.editButton {
+  background-color: #007bff;
+}
+
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+.logoutButton {
+  background-color: #dc3545;
+}
+
+.logoutButton:hover {
+  background-color: #c82333;
+}
+
+.toggleButton {
+  background-color: #6c757d;
+}
+
+.toggleButton:hover {
+  background-color: #5a6268;
+}
+
+input[type="text"], input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}

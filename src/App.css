@@ -1,0 +1,40 @@
+#root {
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh 
+}
+
+body, html {
+  margin: 0;
+  height: 100%; 
+  overflow-y: auto; 
+}
+
+.main-content {
+  margin-top: 20px;
+  overflow-y: auto; 
+  max-height: 90vh; 
+  padding: 1rem;
+  padding-bottom: 70px;
+  flex-grow: 1;
+  padding-top: 20px;
+
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+

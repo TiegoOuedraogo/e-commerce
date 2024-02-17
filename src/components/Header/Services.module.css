@@ -1,0 +1,53 @@
+
+.heading {
+    color: #333;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .introText {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  
+  .servicesSection, .managersSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service, .manager {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .serviceImage, .managerImage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .serviceTitle {
+    margin-top: 0;
+    color: #444;
+  }
+  
+  .serviceDescription, .managerBio {
+    text-align: justify;
+  }
+  
+  .managerName {
+    margin-top: 0;
+  }
+  
+  .managerRole {
+    color: #555;
+    font-style: italic;
+  }
+  
+  

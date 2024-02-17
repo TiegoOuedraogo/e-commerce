@@ -1,0 +1,79 @@
+.footer {
+  position: fixed;
+  background-color: #333;
+  padding-bottom: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 17vh;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2px;
+}
+
+.logo {
+  padding-top: 30px;
+  margin-right: 33%;
+}
+
+.logoImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.aboutCompany,
+.quickLinks,
+.socialMedia {
+  margin: 0 10px;
+}
+
+.aboutCompany h3,
+.quickLinks h3 {
+  margin-top: 0;
+}
+
+.quickLinks a,
+.socialMedia a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.quickLinks a:hover,
+.socialMedia a:hover {
+  text-decoration: underline;
+}
+
+.footerBottom {
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column; 
+    padding: 10px 0; 
+  }
+
+  .navContainer, .searchBar form {
+    flex-direction: column;
+  }
+
+  .navLinks {
+    flex-direction: column; 
+    padding: 10px 0; 
+  }
+
+  .searchBar input, .searchBar button, .filterButton {
+    width: 90%; 
+    margin: 10px auto;
+  }
+}

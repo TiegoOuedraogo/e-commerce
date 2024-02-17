@@ -1,0 +1,78 @@
+.orderSuccessPage {
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #0e0f0e; 
+  text-align: center;
+  
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.navigationLinks {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigationLinks a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navigationLinks a:hover {
+  background-color: #f0f0f0;
+  border-color: #007bff;
+}
+
+.viewOrdersLink {
+  background-color: #007bff;
+  color: white;
+}
+
+.updateButton, .cancelButton {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.updateButton {
+  background-color: #ffc107; 
+  color: #333;
+}
+
+.updateButton:hover {
+  background-color: #e0a800;
+}
+
+.cancelButton {
+  background-color: #f44336; 
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #d32f2f;
+}

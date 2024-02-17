@@ -1,0 +1,47 @@
+.container {
+    padding: 20px;
+  }
+  
+  .productForm {
+    margin-bottom: 20px;
+  }
+  
+  .productsTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .productsTable th,
+  .productsTable td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .productsTable th {
+    background-color: #f4f4f4;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: #ff0000;
+    margin: 10px 0;
+  }
+  
+  .success {
+    color: #28a745;
+    margin: 10px 0;
+  }
+  

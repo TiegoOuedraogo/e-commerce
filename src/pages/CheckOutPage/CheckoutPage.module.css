@@ -1,0 +1,53 @@
+.checkoutFormContainer {
+  max-width: 600px; /* Adjust to preferred width */
+  margin: 3rem auto; /* Increase top and bottom margin for more space */
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow-y: auto; /* Allows scrolling within the form container if needed */
+}
+
+.checkoutForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkoutForm h2 {
+  text-align: center;
+  margin-bottom: 25rem; 
+}
+
+.checkoutForm > div {
+  margin-bottom: 1.5rem; 
+}
+
+.checkoutForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.checkoutForm input,
+.checkoutForm select {
+  width: 100%; /* Full width of the form container */
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-sizing: border-box; /* Ensures padding does not add to the width */
+}
+
+.checkoutForm input:focus,
+.checkoutForm select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+}
+
+.submitButton {
+  width: auto; /* Adjusted to fit content width while allowing padding */
+  padding: 1rem 2rem; /* Increased padding for a larger button */
+  margin-top: 2rem; /* Increased top margin for better separation from form fields */
+  margin-bottom: 1rem; /* Added for spacing at the bottom */
+}

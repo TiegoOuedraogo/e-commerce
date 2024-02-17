@@ -1,0 +1,18 @@
+.navList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navItem {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #333;
+}
+
+.navLink:hover {
+    color: #007bff;
+}
