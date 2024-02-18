@@ -40,7 +40,8 @@ const UserManagement = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {users.map(user => (
+                {/* {Array.isArray(products) && products.map((product) => */}
+                    {Array.isArray(users) && users.map(user => (
                         <tr key={user._id}>
                             <td>{user._id}</td>
                             <td>{user.username}</td>

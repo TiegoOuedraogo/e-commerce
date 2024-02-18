@@ -5,7 +5,7 @@ import cartReducer from '../features/cart/cartSlice';
 import userReducer from '../features/user/userSlice';
 import checkoutReducer from '../features/checkout/checkoutSlice';
 import categoryReducer from '../features/categories/categorySlice';
-
+import adminProductsReducer from '../features/adminProductsSlice/adminProductsSlice';
 
 export const store = configureStore({
   reducer: {
@@ -15,9 +15,9 @@ export const store = configureStore({
     product: productReducer,
     cart: cartReducer,
     order: orderReducer,
-
+    adminProducts: adminProductsReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 });
-console.log('Store updated:', store.getState().cart);
+// console.log('Store updated:', store.getState().cart);
 

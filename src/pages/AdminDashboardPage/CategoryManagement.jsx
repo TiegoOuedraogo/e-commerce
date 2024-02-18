@@ -67,7 +67,7 @@ const CategoryManagement = () => {
                 <button onClick={handleAddCategory}>Add Category</button>
             </div>
             <div>
-                {categories.map((category) => (
+                {Array.isArray(categories) && categories.map((category) => (
                     <div key={category.id} className={styles.categoryItem}>
                         <span>{category.name}</span>
                         {/* Add buttons for editing and deleting categories */}

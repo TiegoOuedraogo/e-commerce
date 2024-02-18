@@ -20,25 +20,6 @@ const orderApi = {
     }
   },
   
-//   getOrderDetails: async (orderId) => {
-//     try {
-//         const response = await fetch(`http://localhost:3000/api/orders/${orderId}`, {
-//             headers: {
-//                 'Authorization': `Bearer ${localStorage.getItem('authToken')}`,
-//             },
-//         });
-
-//         if (!response.ok) {
-//             throw new Error('Network response was not ok');
-//         }
-
-//         const data = await response.json();
-//         return data;
-//     } catch (error) {
-//         throw error;
-//     }
-// },
-
 getOrderDetails: async (orderId) => {
   try {
     const response = await axios.get(`/api/orders/${orderId}`);

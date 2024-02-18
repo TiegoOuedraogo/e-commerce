@@ -1,4 +1,3 @@
-// features/checkout/checkoutSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import checkoutApi from '../../api/checkOutApi';
 

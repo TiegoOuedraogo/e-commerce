@@ -58,6 +58,8 @@ function App() {
             <Route path="orders" element={<OrderManagement />} />
             </Route>
             <Route path="/admin/*" element={<p>Admin section not found</p>} />
+
+            
           </Routes>
         </div>
           <Footer />
