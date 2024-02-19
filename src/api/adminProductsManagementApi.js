@@ -55,10 +55,22 @@ export const deleteProductById = async (productId) => {
   }
 };
 
+const fetchCategories = async () => {
+  try {
+      const response = await axios.get(`${API_BASE_URL}/categories`); 
+      return response.data
+  } catch (error) {
+      console.error('Error fetching categories:', error);
+      setError('Failed to fetch categories');
+  }
+};
+
 
 export default {
   getProducts,
   addProduct,
   updateProductById,
   deleteProductById,
+  fetchCategories
 };
+

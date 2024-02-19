@@ -21,10 +21,16 @@ export const deleteProduct = createAsyncThunk('adminProducts/deleteProduct', asy
   return productId;
 });
 
+export const fetchCategories = createAsyncThunk('adminProducts/fetchCategories', async () => {
+  const response = await adminProductsManagementApi.getCategories();
+  return response;
+});
+
 const adminProductsSlice = createSlice({
   name: 'adminProducts',
   initialState: {
     products: [],
+    categories: [],
     status: 'idle', 
     error: null
   },
@@ -77,8 +83,21 @@ const adminProductsSlice = createSlice({
       .addCase(deleteProduct.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
+      })
+      .addCase(fetchCategories.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(fetchCategories.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.categories = action.payload;
+      })
+      .addCase(fetchCategories.rejected, (state, action) => {
+        state.status = 'failed';
+        state.error = action.error.message;
       });
   },
+
+  
 });
 
 export default adminProductsSlice.reducer;
