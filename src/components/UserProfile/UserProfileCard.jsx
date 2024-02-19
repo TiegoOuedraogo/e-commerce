@@ -55,7 +55,7 @@ const UserProfile = () => {
 
   const handleLogout = () => {
     dispatch(logout());
-    navigate('/login');
+    navigate('/');
   };
 
 
@@ -104,3 +104,4 @@ const UserProfile = () => {
 };
 
 export default UserProfile;
+

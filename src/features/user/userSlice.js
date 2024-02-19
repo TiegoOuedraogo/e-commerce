@@ -117,6 +117,7 @@ const userSlice = createSlice({
         state.user = null;
         state.token = null;
         state.userRole = null;
+        state.isAuth = false;
         state.status = 'idle';
       });
   },

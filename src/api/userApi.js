@@ -15,7 +15,8 @@ const userApi = {
     try {
       console.log('line 17 from user api')
       const response = await axios.post(`${API_URL}/api/users/login`, credentials);
-      localStorage.setItem('authToken', response.data.token); 
+      localStorage.setItem('authToken', response.data.token);
+      localStorage.setItem('userRole', response.data.userRole); 
       return response.data;
     } catch (error) {
       throw error.response?.data || error;
