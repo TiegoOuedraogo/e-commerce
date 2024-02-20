@@ -69,21 +69,29 @@ const DisplayCartPage = () => {
               </div>
             </div>
             <div className={styles.itemPrice}>
-            <p>${item.price.amount.toFixed(2)}</p>
+            {/* <p>${item.price.amount.toFixed(2)}</p> */}
+            <p>${(item.quantity * item.price.amount).toFixed(2)}</p>
   <button onClick={() => dispatch(removeFromCart(item._id))} className={styles.removeButton} aria-label="Remove item">Delete</button>
 </div>
           </div>
         ))}
       </div>
       <div className={styles.totalSection}>
-  <p className={styles.subtotal}>
+
+  {/* <p className={styles.subtotal}>
     Subtotal ({cartItems.reduce((acc, item) => acc + item.quantity, 0)} items):
-    
     <span>
   ${cartItems.reduce((acc, item) => acc + item.quantity * (item.price?.amount ?? 0), 0).toFixed(2)}
 </span>
-  
-  </p>
+  </p> */}
+
+<p className={styles.subtotal}>
+  Subtotal ({cartItems.reduce((acc, item) => acc + item.quantity, 0)} items): 
+  <span>
+    ${cartItems.reduce((acc, item) => acc + item.quantity * (item.price?.amount ?? 0), 0).toFixed(2)}
+  </span>
+</p>
+
   <button onClick={handleCheckout} className={styles.checkoutButton}>Proceed to Checkout</button>
 </div>
 

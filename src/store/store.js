@@ -5,7 +5,9 @@ import cartReducer from '../features/cart/cartSlice';
 import userReducer from '../features/user/userSlice';
 import checkoutReducer from '../features/checkout/checkoutSlice';
 import categoryReducer from '../features/categories/categorySlice';
-import adminProductsReducer from '../features/adminProductsSlice/adminProductsSlice';
+import adminProductsReducer from '../features/adminProducts/adminProductsSlice';
+import adminUserReducer from '../features/adminUser/adminUserSlice';
+import adminOrderReducer from '../features/adminOrder/adminOrderSlice';
 
 export const store = configureStore({
   reducer: {
@@ -16,6 +18,8 @@ export const store = configureStore({
     cart: cartReducer,
     order: orderReducer,
     adminProducts: adminProductsReducer,
+    adminUser: adminUserReducer,
+    adminOrder:adminOrderReducer
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 });
