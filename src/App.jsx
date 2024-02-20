@@ -15,6 +15,7 @@ import CheckOutPage from './pages/CheckOutPage/CheckOutPage';
 import ContactPage from './components/Header/Contact';
 import ServicesPage from './components/Header/Services';
 import OrderSuccessPage from './pages/OrderPage/OrderSuccessPage';
+import ProductSearchPage from './pages/ProductSearchPage/SearchPage'
 
 //import components
 import Header from './components/Header/Header';
@@ -49,7 +50,9 @@ function App() {
             <Route path="/checkout" element={<CheckOutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/order-success" element={<OrderSuccessPage />} /> 
+            <Route path="/order-success" element={<OrderSuccessPage />} />
+            <Route path="/search" element={<ProductSearchPage />} /> 
+ 
 
             <Route path="/admin" element={<AdminDashboard />}>
             <Route index element={<p>Welcome to Admin Dashboard</p>} />

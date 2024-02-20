@@ -15,19 +15,6 @@ function Login() {
     setCredentials(prev => ({ ...prev, [name]: value }));
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     console.log("line21 " ,credentials)
-  //     await dispatch(login(credentials)).unwrap();
-  //     navigate('/products'); 
-  //   } catch (err) {
-  //     console.log("line 25",err)
-  //     setError('Failed to log in. Please check your credentials.',err); 
-  //   }
-  // };
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

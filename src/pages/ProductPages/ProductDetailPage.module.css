@@ -41,11 +41,6 @@ ul {
   padding: 0;
 }
 
-li {
-  border-bottom: 1px solid #eee;
-  padding: 10px 0;
-}
-
 li:last-child {
   border-bottom: none;
 }
