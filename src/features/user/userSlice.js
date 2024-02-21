@@ -3,8 +3,10 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 // Import the user API service that interacts with the backend
 import userApi from '../../api/userApi';
 
-const API_URL = import.meta.env.VITE_APP_API_URL || 'https://backend-72yx.onrender.com/'; 
+const API_URL = import.meta.env.VITE_APP_API_URL || 'http://localhost:3000'; 
 
+//http://localhost:3000
+//https://backend-72yx.onrender.com/
 // Asynchronous thunk for logging in
 export const login = createAsyncThunk(`${API_URL}/api/users/login`,
   async (credentials, { rejectWithValue }) => {
