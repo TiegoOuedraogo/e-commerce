@@ -3,13 +3,13 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 // Import the user API service that interacts with the backend
 import userApi from '../../api/userApi';
 
-const API_URL = import.meta.env.VITE_APP_API_URL || 'http://localhost:3000'; 
+const API_URL = import.meta.env.VITE_APP_API_URL || 'https://backend-72yx.onrender.com/'; 
 
 // Asynchronous thunk for logging in
 export const login = createAsyncThunk(`${API_URL}/api/users/login`,
   async (credentials, { rejectWithValue }) => {
     try {
-      console.log("line 12 user slice")
+      //console.log("line 12 user slice")
       // Attempt to log in with provided credentials
       const response = await userApi.login(credentials);
       // Store the token and userRole in localStorage for session persistence
@@ -51,7 +51,7 @@ export const register = createAsyncThunk(
       // Return the response for further processing
       return response;
     } catch (err) {
-      console.log("user role err ",err)
+      //console.log("user role err ",err)
       // If an error occurs, pass it to the reducer
       return rejectWithValue(err.response.data);
     }

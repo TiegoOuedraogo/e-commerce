@@ -2,7 +2,7 @@ import axios from './axios';
 
 const orderApi = {
   createOrder: async (orderData) => {
-    console.log('sending order')
+    //console.log('sending order')
     try {
       const response = await axios.post('/orders', orderData);
       console.log("response to the order ",response.data)

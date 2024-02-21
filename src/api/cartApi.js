@@ -13,11 +13,11 @@ const addToCart = async (productDetails) => {
 
 
 const getCartItems = async () => {
-  console.log('Sending getCartItems request');
+  //console.log('Sending getCartItems request');
 
     try {
         const response = await axios.get(`/api/cart/items`);
-        console.log("Getting cart items ", response.data);
+        //console.log("Getting cart items ", response.data);
         return response.data;
     } catch (error) {
         console.error('Error getting cart items:', error);
@@ -28,14 +28,14 @@ const getCartItems = async () => {
 
 const updateCartItem = async (productId, quantity) => {
     const response = await axios.put(`/api/cart/update`, { productId, quantity });
-    console.log("updating" , response.data)
+    //console.log("updating" , response.data)
     return response.data;
 };
 
 const removeFromCart = async (productId) => {
     try {
         const response = await axios.delete(`/api/cart/remove/${productId}`);
-        console.log("Removing product with ID:", productId); 
+        //console.log("Removing product with ID:", productId); 
         return response.data;
     } catch (error) {
         console.error('Error removing from cart:', error);
@@ -47,7 +47,7 @@ const removeFromCart = async (productId) => {
 const clearCart = async () => {
     try {
         const response = await axios.get(`/api/cart/clear`);
-        console.log("Cart cleared");
+        //console.log("Cart cleared");
         return response.data;
     } catch (error) {
         console.error('Error clearing the cart:', error);
