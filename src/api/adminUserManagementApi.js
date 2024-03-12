@@ -1,5 +1,5 @@
 import axios from './axios'; 
-const API_BASE_URL =  'http://localhost:3000/api/admin';
+const API_BASE_URL =  'https://backend-o8gr.onrender.com/api/admin';
 
 export const getUsers = async () => {
   try {

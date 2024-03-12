@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { getOrderDetails, cancelOrder, updateOrder } from '../../features/order/orderSlice'; // Corrected import names
+import { getOrderDetails, cancelOrder, updateOrder } from '../../features/order/orderSlice';
 import styles from './OrderSuccessPage.module.css';
 
 const OrderSuccessPage = () => {

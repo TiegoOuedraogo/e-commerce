@@ -10,7 +10,8 @@ const OrderDetailsModal = ({ isOpen, order, onClose }) => {
             <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
                 <h2>Order Details</h2>
                 <p><strong>Order ID:</strong> {order._id}</p>
-                <p><strong>User ID:</strong> {order.user ? order.user.username : 'User Deleted'}</p>
+                <p><strong>User ID:</strong> {order.user_id ? order.user.username : 'User Deleted'}</p>
+                {console.log("user id testing",user_id)}
                 <p><strong>Total Price:</strong> ${order.totalPrice.toFixed(2)}</p>
                 <p><strong>Order Date:</strong> {new Date(order.orderedDate).toLocaleDateString()}</p>
                 <h3>Items:</h3>

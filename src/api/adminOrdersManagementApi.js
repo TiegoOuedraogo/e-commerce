@@ -1,7 +1,7 @@
 import axios from './axios'; 
-const API_BASE_URL =  'http://localhost:3000/api/admin';
+const API_BASE_URL =  'https://backend-o8gr.onrender.com/api/admin';
 
-//https://backend-wstq.onrender.com
+//https://backend-o8gr.onrender.com
 
 export const getOrders = async () => {
   try {
